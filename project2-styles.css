@@ -1,0 +1,115 @@
+
+body {
+    background-color: #f5e3e3; /* Soft pink background */
+    font-family: 'Pacifico', cursive; 
+    color: #4c4c4c; /* Dark gray text color */
+    margin: 0; 
+}
+
+header {
+    background-color: #ff7b7b; /* Coral pink header */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0 50% 50%; /* Rounded bottom corners */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Search box and button */
+main {
+    max-width: 800px;
+    margin: 50px auto; /* Increased top margin for better positioning */
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; 
+}
+
+#query {
+    width: 70%;
+    padding: 10px;
+    margin-right: 5px;
+    border: 2px solid #ff7b7b; 
+    border-radius: 20px; 
+    font-family: 'Lobster', cursive; 
+}
+
+#searchButton, #changeBackgroundColorButton, #toggleFadeButton, #luckyButton {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ff7b7b; /* Coral pink button background */
+    color: white;
+    border: none;
+    border-radius: 20px; 
+    transition: background-color 0.3s ease-in-out; 
+}
+
+#searchButton:hover, #changeBackgroundColorButton:hover, #toggleFadeButton:hover, #luckyButton:hover {
+    background-color: #e46262; /* Darker coral on hover */
+}
+
+#searchResults {
+    margin-top: 20px;
+}
+
+.fade {
+    display: none; 
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(transparent 50%, #ff7b7b 50%), linear-gradient(90deg, transparent 50%, #ff7b7b 50%);
+    background-size: 20px 20px;
+    opacity: 0.3; 
+}
+
+/* Flower */
+.flower-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.flower {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.petal {
+    width: 15px;
+    height: 30px;
+    background-color: #f7c7c7; /* Petal color */
+    border-radius: 50%;
+    position: absolute;
+    transform-origin: 50% 100%;
+}
+
+.petal:nth-child(1) { transform: rotate(0deg); }
+.petal:nth-child(2) { transform: rotate(45deg); }
+.petal:nth-child(3) { transform: rotate(90deg); }
+.petal:nth-child(4) { transform: rotate(135deg); }
+
+.center {
+    width: 12px;
+    height: 12px;
+    background-color: #ffd700; /* Center color */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flower-container.left {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}

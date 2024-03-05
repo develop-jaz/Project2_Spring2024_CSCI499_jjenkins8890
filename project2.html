@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project2-styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="project2js.js"></script>
+    <title>BloomSearch</title>
+</head>
+<body>
+    <header id="header">
+        <h1>BloomSearch</h1>
+    </header>
+    <main>
+        <input type="text" id="query" placeholder="Search">
+        <button id="searchButton" onclick="apiSearch()">Search</button>
+        <button id="changeBackgroundColorButton" onclick="changeBackgroundColor()">Change Background Color</button>
+        <button id="toggleFadeButton" onclick="toggleFade()">Toggle Fade</button>
+        <button id="luckyButton" onclick="searchLucky()">I'm feeling lucky</button>
+        <div id="searchResults"></div>
+
+    </main>
+    <!--for the flowers-->
+    <div class="flower-container">
+        <div class="flower">
+          <div class="petal"></div>
+          <div class="petal"></div>
+          <div class="petal"></div>
+          <div class="petal"></div>
+          <div class="center"></div>
+        </div>
+      </div>
+      <div class="flower-container left">
+        <div class="flower">
+          <div class="petal"></div>
+          <div class="petal"></div>
+          <div class="petal"></div>
+          <div class="petal"></div>
+          <div class="center"></div>
+        </div>
+      </div>
+</body>
+</html>
+
